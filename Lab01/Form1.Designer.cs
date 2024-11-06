@@ -42,6 +42,7 @@ namespace Lab01
             this.lbl_price = new System.Windows.Forms.Label();
             this.lbl_Name = new System.Windows.Forms.Label();
             this.lbl_TotalPrice = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -159,11 +160,21 @@ namespace Lab01
             this.lbl_TotalPrice.TabIndex = 12;
             this.lbl_TotalPrice.Text = "TotalPrice: ";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(164, 486);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(338, 17);
+            this.label2.TabIndex = 13;
+            this.label2.Text = "Created by Lam Yun Sang 230686837 on 6/11/2024";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(964, 610);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_TotalPrice);
             this.Controls.Add(this.lbl_Name);
             this.Controls.Add(this.lbl_price);
@@ -198,6 +209,7 @@ namespace Lab01
         private System.Windows.Forms.Label lbl_price;
         private System.Windows.Forms.Label lbl_Name;
         private System.Windows.Forms.Label lbl_TotalPrice;
+        private System.Windows.Forms.Label label2;
     }
 }
 
