@@ -43,13 +43,15 @@ namespace Lab01
             this.lbl_Name = new System.Windows.Forms.Label();
             this.lbl_TotalPrice = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(9, 10);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(88, 88);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -60,9 +62,10 @@ namespace Lab01
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(130, 46);
+            this.label1.Location = new System.Drawing.Point(98, 37);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 25);
+            this.label1.Size = new System.Drawing.Size(199, 20);
             this.label1.TabIndex = 1;
             this.label1.Text = "Legend Motor Company";
             // 
@@ -70,18 +73,20 @@ namespace Lab01
             // 
             this.lbl_productName.AutoSize = true;
             this.lbl_productName.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl_productName.Location = new System.Drawing.Point(31, 168);
+            this.lbl_productName.Location = new System.Drawing.Point(23, 136);
+            this.lbl_productName.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_productName.Name = "lbl_productName";
-            this.lbl_productName.Size = new System.Drawing.Size(160, 20);
+            this.lbl_productName.Size = new System.Drawing.Size(135, 17);
             this.lbl_productName.TabIndex = 2;
             this.lbl_productName.Text = "Product Information:";
             // 
             // lbl_productPrice
             // 
             this.lbl_productPrice.AutoSize = true;
-            this.lbl_productPrice.Location = new System.Drawing.Point(52, 214);
+            this.lbl_productPrice.Location = new System.Drawing.Point(39, 174);
+            this.lbl_productPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_productPrice.Name = "lbl_productPrice";
-            this.lbl_productPrice.Size = new System.Drawing.Size(56, 17);
+            this.lbl_productPrice.Size = new System.Drawing.Size(43, 13);
             this.lbl_productPrice.TabIndex = 3;
             this.lbl_productPrice.Text = "Price: $";
             // 
@@ -93,26 +98,29 @@ namespace Lab01
             "A0002",
             "B0001",
             "B0002"});
-            this.cb_productCode.Location = new System.Drawing.Point(277, 183);
+            this.cb_productCode.Location = new System.Drawing.Point(208, 149);
+            this.cb_productCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cb_productCode.Name = "cb_productCode";
-            this.cb_productCode.Size = new System.Drawing.Size(121, 24);
+            this.cb_productCode.Size = new System.Drawing.Size(92, 21);
             this.cb_productCode.TabIndex = 5;
             this.cb_productCode.SelectedIndexChanged += new System.EventHandler(this.cb_productCode_SelectedIndexChanged);
             // 
             // lbl_productID
             // 
             this.lbl_productID.AutoSize = true;
-            this.lbl_productID.Location = new System.Drawing.Point(52, 197);
+            this.lbl_productID.Location = new System.Drawing.Point(39, 160);
+            this.lbl_productID.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_productID.Name = "lbl_productID";
-            this.lbl_productID.Size = new System.Drawing.Size(53, 17);
+            this.lbl_productID.Size = new System.Drawing.Size(41, 13);
             this.lbl_productID.TabIndex = 4;
             this.lbl_productID.Text = "Name: ";
             // 
             // btn_order
             // 
-            this.btn_order.Location = new System.Drawing.Point(298, 357);
+            this.btn_order.Location = new System.Drawing.Point(224, 290);
+            this.btn_order.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_order.Name = "btn_order";
-            this.btn_order.Size = new System.Drawing.Size(75, 23);
+            this.btn_order.Size = new System.Drawing.Size(56, 19);
             this.btn_order.TabIndex = 6;
             this.btn_order.Text = "Order";
             this.btn_order.UseVisualStyleBackColor = true;
@@ -120,9 +128,10 @@ namespace Lab01
             // 
             // btn_cancel
             // 
-            this.btn_cancel.Location = new System.Drawing.Point(136, 356);
+            this.btn_cancel.Location = new System.Drawing.Point(102, 289);
+            this.btn_cancel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btn_cancel.Name = "btn_cancel";
-            this.btn_cancel.Size = new System.Drawing.Size(75, 23);
+            this.btn_cancel.Size = new System.Drawing.Size(56, 19);
             this.btn_cancel.TabIndex = 7;
             this.btn_cancel.Text = "Cancel";
             this.btn_cancel.UseVisualStyleBackColor = true;
@@ -130,50 +139,65 @@ namespace Lab01
             // 
             // txtbox_quantity
             // 
-            this.txtbox_quantity.Location = new System.Drawing.Point(288, 214);
+            this.txtbox_quantity.Location = new System.Drawing.Point(216, 174);
+            this.txtbox_quantity.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtbox_quantity.Name = "txtbox_quantity";
-            this.txtbox_quantity.Size = new System.Drawing.Size(100, 22);
+            this.txtbox_quantity.Size = new System.Drawing.Size(76, 20);
             this.txtbox_quantity.TabIndex = 8;
             // 
             // lbl_price
             // 
             this.lbl_price.AutoSize = true;
-            this.lbl_price.Location = new System.Drawing.Point(119, 214);
+            this.lbl_price.Location = new System.Drawing.Point(89, 174);
+            this.lbl_price.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_price.Name = "lbl_price";
-            this.lbl_price.Size = new System.Drawing.Size(0, 17);
+            this.lbl_price.Size = new System.Drawing.Size(0, 13);
             this.lbl_price.TabIndex = 10;
             // 
             // lbl_Name
             // 
             this.lbl_Name.AutoSize = true;
-            this.lbl_Name.Location = new System.Drawing.Point(112, 197);
+            this.lbl_Name.Location = new System.Drawing.Point(84, 160);
+            this.lbl_Name.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_Name.Name = "lbl_Name";
-            this.lbl_Name.Size = new System.Drawing.Size(0, 17);
+            this.lbl_Name.Size = new System.Drawing.Size(0, 13);
             this.lbl_Name.TabIndex = 11;
             // 
             // lbl_TotalPrice
             // 
             this.lbl_TotalPrice.AutoSize = true;
-            this.lbl_TotalPrice.Location = new System.Drawing.Point(277, 285);
+            this.lbl_TotalPrice.Location = new System.Drawing.Point(208, 232);
+            this.lbl_TotalPrice.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lbl_TotalPrice.Name = "lbl_TotalPrice";
-            this.lbl_TotalPrice.Size = new System.Drawing.Size(80, 17);
+            this.lbl_TotalPrice.Size = new System.Drawing.Size(61, 13);
             this.lbl_TotalPrice.TabIndex = 12;
             this.lbl_TotalPrice.Text = "TotalPrice: ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(164, 486);
+            this.label2.Location = new System.Drawing.Point(123, 395);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(338, 17);
+            this.label2.Size = new System.Drawing.Size(258, 13);
             this.label2.TabIndex = 13;
             this.label2.Text = "Created by Lam Yun Sang 230686837 on 6/11/2024";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(591, 180);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 13);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Build project";
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(964, 610);
+            this.ClientSize = new System.Drawing.Size(723, 496);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lbl_TotalPrice);
             this.Controls.Add(this.lbl_Name);
@@ -187,6 +211,7 @@ namespace Lab01
             this.Controls.Add(this.lbl_productName);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "LMC e commerce";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -210,6 +235,7 @@ namespace Lab01
         private System.Windows.Forms.Label lbl_Name;
         private System.Windows.Forms.Label lbl_TotalPrice;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
     }
 }
 
